@@ -15,6 +15,7 @@
     $nameErr = ""; // Повідомлення про помилку 
     if (isset($_POST['Submit'])) { 
      // Якщо натиснута кнопка 'Submit'
+        $n = $_POST['number'];
         $count = $_POST['hidden'] + 1;// Збільшуємо лічильник на 1
        print (($_POST['hidden'] + 1)."|");
         if (empty($_POST["my_number"])) { // Якщо нічого не ввели
